@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filterable Image Gallery in HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Filter Buttons -->
+      <div class="filter_buttons">
+        <button class="active" data-name="all">Show all</button>
+        <button data-name="Taylor">Taylor Swift</button>
+        <button data-name="Coldplay">Coldplay</button>
+        <button data-name="Kodaline">Kodaline</button>
+      </div>
+      <!-- Images Cards -->
+      <div class="filterable_cards">
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/1989.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">1989</p>
+          </div>
+        </div>
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/CruelSummer.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">Cruel Summer</p>
+          </div>
+        </div>
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/Evermore.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">Evermore</p>
+          </div>
+        </div>
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/Folklore.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">Folklore</p>
+          </div>
+        </div>
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/Fortnight.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">Fortnight</p>
+          </div>
+        </div>
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/Lover.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">Lover</p>
+          </div>
+        </div>
+        <div class="card" data-name="Taylor">
+          <img src="./images/Taylor/Red.webp" alt="Taylor" />
+          <div class="card_body">
+            <p class="card_title">Taylor Swift</p>
+            <p class="card_text">Red</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img src="./images/Coldplay/Parachutes.webp" alt="Coldplay" />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">Parachutes</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img
+            src="./images/Coldplay/A Sky Full Of Stars.webp"
+            alt="Coldplay"
+          />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">A Sky Full Of Stars</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img src="./images/Coldplay/AHeadFullofDreams.webp" alt="Coldplay" />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">A Head Full Of Dreams</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img src="./images/Coldplay/HigherPower.webp" alt="Coldplay" />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">Higher Power</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img src="./images/Coldplay/Magic.webp" alt="Coldplay" />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">Magic</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img
+            src="./images/Coldplay/Music of the Spheres.webp"
+            alt="Coldplay"
+          />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">Music of the Spheres</p>
+          </div>
+        </div>
+        <div class="card" data-name="Coldplay">
+          <img src="./images/Coldplay/Mylo Xyloto.webp" alt="Coldplay" />
+          <div class="card_body">
+            <p class="card_title">Coldplay</p>
+            <p class="card_text">Mylo Xyloto</p>
+          </div>
+        </div>
+        <div class="card" data-name="Kodaline">
+          <img src="./images/Kodaline/Follow Your Fire.webp" alt="Kodaline" />
+          <div class="card_body">
+            <p class="card_title">Kodaline</p>
+            <p class="card_text">Follow Your Fire</p>
+          </div>
+        </div>
+        <div class="card" data-name="Kodaline">
+          <img src="./images/Kodaline/In a Perfect World.webp" alt="Kodaline" />
+          <div class="card_body">
+            <p class="card_title">Kodaline</p>
+            <p class="card_text">In a Perfect World</p>
+          </div>
+        </div>
+        <div class="card" data-name="Kodaline">
+          <img src="./images/Kodaline/One Day at a Time.webp" alt="Kodaline" />
+          <div class="card_body">
+            <p class="card_title">Kodaline</p>
+            <p class="card_text">One Day at a Time</p>
+          </div>
+        </div>
+        <div class="card" data-name="Kodaline">
+          <img src="./images/Kodaline/Politics of Living.webp" alt="Kodaline" />
+          <div class="card_body">
+            <p class="card_title">Kodaline</p>
+            <p class="card_text">Politics of Living</p>
+          </div>
+        </div>
+        <div class="card" data-name="Kodaline">
+          <img src="./images/Kodaline/Sometimes.webp" alt="Kodaline" />
+          <div class="card_body">
+            <p class="card_title">Kodaline</p>
+            <p class="card_text">Sometimes</p>
+          </div>
+        </div>
+        <div class="card" data-name="Kodaline">
+          <img src="./images/Kodaline/Wherever You Are.webp" alt="Kodaline" />
+          <div class="card_body">
+            <p class="card_title">Kodaline</p>
+            <p class="card_text">Wherever You Are</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
